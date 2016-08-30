@@ -1,0 +1,19 @@
+1. echo geturu bara tekið texta inn á meðan prin getur tekið texta og breytur.
+2.
+3. Getur náði í allar breytur sem eru fyrir utan sviga.
+4. $a == $b Equal TRUE ef $a er jafn $b eftir type juggling.
+   $a === $b Identical TRUE ef $a er jafn $b, og þeir eru af sömu gerð.
+5. Produces output according to format.
+    <?php 
+  	$goodevil = array('good', 'evil'); 
+  	printf_array('There is a difference between %s and %s', $goodevil); 
+  	?> 
+6.  $a = 1;         $a = 3
+  	$b = $a++;      $b = 1
+  	$c = ++$a;      $c = 3
+  	echo $a . $b . $c; = 313
+8. 
+9.  $colors = array("red","blue","green");
+    list($a, $b, $c) = $colors;
+    echo "$a $b and $c";
+10. 
