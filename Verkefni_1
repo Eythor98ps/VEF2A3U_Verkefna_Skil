@@ -8,12 +8,48 @@
   	$goodevil = array('good', 'evil'); 
   	printf_array('There is a difference between %s and %s', $goodevil); 
   	?> 
+
 6.  $a = 1;         $a = 3
   	$b = $a++;      $b = 1
   	$c = ++$a;      $c = 3
   	echo $a . $b . $c; = 313
 8. 
-9.  $colors = array("red","blue","green");
+9. 
+    <?php 
+    $colors = array("red","blue","green");
     list($a, $b, $c) = $colors;
     echo "$a $b and $c";
+    ?>
+
 10. 
+    <?php
+    $states = array("California", "Texas", "Ohio", "New York"); 
+    print_r($states);
+    ?>
+    
+11. 
+    <?php
+    $states = array("California", "Texas", "Ohio", "New York"); 
+    shuffle($states);
+    print_r($states);
+    ?>
+    
+
+12.
+    <?php
+    $products = array(
+    array ("08:10", "10:30", "13:15"),
+    array ("GSÖ2B2U", "VSH2B2U", "FOR2B2U"), 
+    array ("GUS", "GJG", "GRL")
+    );
+    $Nýtt= array();
+    for ($i = 0; $i < count($products); $i++) {
+       $Nýtt[] = array_column($products, $i);
+    }
+
+    foreach($Nýtt as $vals) {
+       echo implode(' ', $vals) . '<br>';
+    }
+    ?>
+    
+13. 
