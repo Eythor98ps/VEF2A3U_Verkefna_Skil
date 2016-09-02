@@ -1,19 +1,28 @@
 1. echo geturu bara tekið texta inn á meðan prin getur tekið texta og breytur.
-2.
+2. $s = "dollars";
+   echo 'This costs a lot of $s.'; // This costs a lot of $s.
+   echo "This costs a lot of $s."; // This costs a lot of dollars.
 3. Getur náði í allar breytur sem eru fyrir utan sviga.
 4. $a == $b Equal TRUE ef $a er jafn $b eftir type juggling.
    $a === $b Identical TRUE ef $a er jafn $b, og þeir eru af sömu gerð.
 5. Produces output according to format.
     <?php 
-  	$goodevil = array('good', 'evil'); 
-  	printf_array('There is a difference between %s and %s', $goodevil); 
-  	?> 
+    $goodevil = array('good', 'evil'); 
+    printf_array('There is a difference between %s and %s', $goodevil); 
+    ?> 
 
 6.  $a = 1;         $a = 3
-  	$b = $a++;      $b = 1
-  	$c = ++$a;      $c = 3
-  	echo $a . $b . $c; = 313
-8. 
+    $b = $a++;      $b = 1
+    $c = ++$a;      $c = 3
+    echo $a . $b . $c; = 313
+8. <?php
+   $country = array("Japan"=>"Tokyo", "Mexico"=>"Mexico City", "USA"=>"New York", "India"=>"Mumbai", "Korea"=>"Seoul", "China"=>"Shanghai");
+   
+   foreach($country as $x => $x_value) {
+    echo "Land: " . $x . " - " . $x_value;
+      echo "<br>";
+   }
+   ?>
 9. 
     <?php 
     $colors = array("red","blue","green");
@@ -51,5 +60,38 @@
        echo implode(' ', $vals) . '<br>';
     }
     ?>
+    08:10 GSÖ2B2U GUS
+    10:30 VSH2B2U GJG
+    13:15 FOR2B2U GRL
     
-13. 
+13. <?php
+    $customers = array
+      (
+      array("Jason Gilmore", "Jesse James", "Donald Duck"),
+      array("jason@example.com", "jesse@example.net", "donald@example.org"),
+      array("614-999-9999", "818-999-9999", "212-999-9999")
+      );
+      
+    $New= array();
+        for ($i = 0; $i < count($customers); $i++) {
+           $New[] = array_column($customers, $i);
+        }
+
+        foreach($New as $vals) {
+        echo implode(' : ', $vals) . '<br>';
+        }
+    ?>
+
+14. <?php
+    $pic = array("pic2.jpg", "PIC10.jpg", "pic20.jpg", "pic1.jpg");
+    natcasesort($pic);
+    print_r($pic);
+
+    //Array ( [3] => pic1.jpg [0] => pic2.jpg [1] => PIC10.jpg [2] => pic20.jpg )
+    //Array ( [0] => PIC10.jpg [1] => pic1.jpg [2] => pic2.jpg [3] => pic20.jpg )
+    ?>
+    
+15. HTTP þýðir HyperText Transfer Protocol. HTTP er undirliggjandi samskiptamáti 
+    sem er notaður af World Wide Web og þessar siðareglur eru skilgreindar hvernig 
+    skilaboð eru sniðin og sent, og hvaða aðgerðir Vefþjónum og vafrar ættu að bregðast 
+    við hinnum ýmsu skipunum.
