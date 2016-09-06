@@ -95,3 +95,10 @@
     sem er notaður af World Wide Web og þessar siðareglur eru skilgreindar hvernig 
     skilaboð eru sniðin og sent, og hvaða aðgerðir Vefþjónum og vafrar ættu að bregðast 
     við hinnum ýmsu skipunum.
+
+17. Server-side skrift er tækni sem notuð eru í þróun vefa sem gefur fólki þær skriftir 
+    á vefþjóni sem framleiða svar sérsniðna beiðni hvers og eins notanda á vefsvæðinu. 
+    Forskriftir geta verið skrifaðar á marga vega frá sjónarhorni þeim sem skrifar vefsíðuna 
+    og hefur mörg skriftartungumál sem eru í boði. Server-side forskriftarþarfir greina frá 
+    notanda-megin þar sem eru innbyggð forrit, ss JavaScript, sem eru rekin notanda-megin í 
+    vafranum, en báðar aðferðir eru oft notaðar saman.
